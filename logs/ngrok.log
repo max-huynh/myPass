@@ -1,0 +1,17 @@
+t=2020-05-03T21:53:37+1000 lvl=info msg="no configuration paths supplied"
+t=2020-05-03T21:53:37+1000 lvl=info msg="using configuration at default config path" path=/root/.ngrok2/ngrok.yml
+t=2020-05-03T21:53:37+1000 lvl=info msg="open config file" path=/root/.ngrok2/ngrok.yml err=nil
+t=2020-05-03T21:53:37+1000 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2020-05-03T21:53:39+1000 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2020-05-03T21:53:39+1000 lvl=info msg="client session established" obj=csess id=d268dc81352f
+t=2020-05-03T21:53:39+1000 lvl=info msg="started tunnel" obj=tunnels name="command_line (http)" addr=http://localhost:80 url=http://ecd04f32.ngrok.io
+t=2020-05-03T21:53:39+1000 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:80 url=https://ecd04f32.ngrok.io
+t=2020-05-03T21:53:42+1000 lvl=warn msg="failed to check for update" obj=updater err="Post https://update.equinox.io/check: context deadline exceeded"
+t=2020-05-03T23:02:20+1000 lvl=eror msg="heartbeat timeout, terminating session" obj=csess id=ae595003cb84 clientid=6fe0d8967c694520d16d0169d2b8cc84
+t=2020-05-03T23:02:20+1000 lvl=eror msg="session closed, starting reconnect loop" obj=csess id=d268dc81352f err="session closed"
+t=2020-05-03T23:02:28+1000 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2020-05-03T23:02:29+1000 lvl=info msg="client session established" obj=csess id=d268dc81352f
+t=2020-05-03T23:12:50+1000 lvl=info msg="join connections" obj=join id=135c1e3c9e64 l=127.0.0.1:80 r=124.168.54.63:57129
+t=2020-05-03T23:12:51+1000 lvl=info msg="join connections" obj=join id=345539742cea l=127.0.0.1:80 r=124.168.54.63:57129
+t=2020-05-03T23:19:03+1000 lvl=info msg="join connections" obj=join id=4bbbed325e7f l=127.0.0.1:80 r=124.168.54.63:57668
+t=2020-05-03T23:19:04+1000 lvl=info msg="join connections" obj=join id=9d275c79aad4 l=127.0.0.1:80 r=124.168.54.63:57668
