@@ -1,6 +1,13 @@
 from flask import Flask, render_template
+import os
 import datetime
+
+IMAGE_RESOURCE = os.path.join('static', 'image')
+
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = IMAGE_RESOURCE
+
+
 
 @app.route('/')
 def hello():
@@ -10,11 +17,9 @@ def hello():
             'title' : 'Hello!',
             'time' : timeString
             }
-    return render_template('main.html', **templateData)
+    logo = os.path.join(app.config['UPLOAD_FOLDER'], 'ku_wears_hoodie.jpeg')
 
-@app.route('/<name>')
-def hello_name(name):
-    return "Hello {}!".format(name)
+    return render_template('home.html', **templateData, image = logo)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
